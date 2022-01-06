@@ -1,0 +1,23 @@
+{
+  "name": "docsify-updated",
+  "version": "1.0.0",
+  "description": "Add update time for each of your docsify markdown",
+  "main": "time-updater.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfeak/docsify-updated.git"
+  },
+  "keywords": [
+    "docsify",
+    "time",
+    "update",
+    "updater",
+    "footer"
+  ],
+  "author": "pfeak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pfeak/docsify-updated/issues"
+  },
+  "homepage": "https://github.com/pfeak/docsify-updated#readme"
+}
