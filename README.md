@@ -59,12 +59,39 @@ please see [https://github.com/lukeed/tinydate#patterns](https://github.com/luke
 
 demo: **english**
 
+```javascript
+window.$docsify = {
+  timeUpdater: {
+    text: ">Last Modify: {docsify-updated}",
+    formatUpdated: "{YYYY}/{MM}/{DD}",
+  },
+};
+```
+
 ![demo1](./images/demo1.png)
 
 demo: **chinese**
 
+```javascript
+window.$docsify = {
+  timeUpdater: {
+    text: ">最后更新时间: {docsify-updated}",
+    formatUpdated: "{YYYY}/{MM}/{DD}",
+  },
+};
+```
+
 ![demo2](./images/demo2.png)
 
 demo: **another style**
+
+```javascript
+window.$docsify = {
+  timeUpdater: {
+    text: "---\nlast update time: {docsify-updated}",
+    formatUpdated: "{YYYY}/{MM}/{DD}",
+  },
+};
+```
 
 ![demo3](./images/demo3.png)
