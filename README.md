@@ -55,6 +55,19 @@ please see [https://github.com/lukeed/tinydate#patterns](https://github.com/luke
 - `{ss}`: seconds; eg: **09**
 - `{fff}`: milliseconds; eg: **555**
 
+## nested
+
+modify `timeUpdater.text` to nest HTML
+
+```javascript
+window.$docsify = {
+  timeUpdater: {
+    text: "<div align='center'>last update time: {docsify-updated}</div>",
+    formatUpdated: "{YYYY}/{MM}/{DD}",
+  },
+};
+```
+
 ## demo
 
 demo: **english**
