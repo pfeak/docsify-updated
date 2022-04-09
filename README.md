@@ -9,13 +9,13 @@ Add update time for each of your docsify markdown
 add js CDN to `index.html`
 
 ```javascript
-<script src="https://cdn.jsdelivr.net/npm/docsify-updated@1/src/time-updater.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
 ```
 
 or
 
 ```javascript
-<script src="https://cdn.jsdelivr.net/npm/docsify-updated@1/src/time-updater.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.js"></script>
 ```
 
 ## usage
