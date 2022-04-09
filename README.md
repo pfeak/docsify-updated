@@ -27,6 +27,7 @@ window.$docsify = {
   timeUpdater: {
     text: ">last update time: {docsify-updated}",
     formatUpdated: "{YYYY}/{MM}/{DD}",
+    whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
   },
 };
 ```
@@ -38,6 +39,7 @@ window.$docsify = {
   timeUpdater: {
     text: ">最后更新时间: {docsify-updated}",
     formatUpdated: "{YYYY}/{MM}/{DD}",
+    whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
   },
 };
 ```
@@ -67,6 +69,37 @@ window.$docsify = {
   },
 };
 ```
+
+![demo1](./images/demo4.png)
+
+or
+
+```javascript
+window.$docsify = {
+  timeUpdater: {
+    text: "<div align='center' width='200px' style='color:gray;font-size:10px'>-------------- 最后更新时间:&emsp;{docsify-updated} --------------</div>",
+    formatUpdated: "{YYYY} 年 {MM} 月 {DD} 日",
+  },
+};
+```
+
+![demo1](./images/demo5.png)
+
+## location
+
+choose where to place it by `timeUpdater.whereToPlace`
+
+```javascript
+window.$docsify = {
+  timeUpdater: {
+    text: ">Last Modify: {docsify-updated}",
+    formatUpdated: "{YYYY}/{MM}/{DD}",
+    whereToPlace: "top"  // "top" or "bottom", default to "bottom"
+  },
+};
+```
+
+![demo1](./images/demo6.png)
 
 ## demo
 
