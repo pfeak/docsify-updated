@@ -1,6 +1,6 @@
 # docsify-updated
 
-![npm](https://img.shields.io/npm/v/docsify-updated) ![NPM](https://img.shields.io/npm/l/docsify-updated)
+![npm](https://img.shields.io/npm/v/docsify-updated) ![NPM](https://img.shields.io/npm/l/docsify-updated) [![](https://data.jsdelivr.com/v1/package/npm/docsify-updated/badge)](https://www.jsdelivr.com/package/npm/docsify-updated)
 
 Add update time for each of your docsify markdown
 
