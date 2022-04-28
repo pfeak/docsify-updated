@@ -1,5 +1,5 @@
 // Docsify plugin default values
-let defaultOptions = {
+let defaultDocsifyUpdatedOptions = {
   text: ">Last Modify: {docsify-updated}",
   formatUpdated: "{YYYY}/{MM}/{DD}",
   whereToPlace: "bottom"
@@ -25,8 +25,8 @@ function plugin(hook, vm) {
 window.$docsify = (window.$docsify || {})
 // https://docsify.js.org/#/configuration?id=formatupdated
 // https://github.com/lukeed/tinydate#patterns
-window.$docsify.formatUpdated = window.$docsify["timeUpdater"] ? window.$docsify["timeUpdater"].formatUpdated : defaultOptions.formatUpdated
-window.$docsify["timeUpdater"] = Object.assign(defaultOptions, window.$docsify["timeUpdater"])
+window.$docsify.formatUpdated = window.$docsify["timeUpdater"] ? window.$docsify["timeUpdater"].formatUpdated : defaultDocsifyUpdatedOptions.formatUpdated
+window.$docsify["timeUpdater"] = Object.assign(defaultDocsifyUpdatedOptions, window.$docsify["timeUpdater"])
 window.$docsify.plugins = (window.$docsify.plugins || []).concat(plugin)
 
 // Usage:

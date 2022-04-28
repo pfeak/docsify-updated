@@ -1,6 +1,6 @@
 {
   "name": "docsify-updated",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Add update time for each of your docsify markdown",
   "main": "src/time-updater.min.js",
   "repository": {
