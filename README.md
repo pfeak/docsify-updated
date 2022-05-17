@@ -155,7 +155,7 @@ demo: **botton right**
 ```java
 window.$docsify = {
   timeUpdater: {
-    text: "<div align='right' width='200px' style='color:gray;font-size:16px'>Posted @ {docsify-updated}</div>",
+    text: "<div align='left' width='200px' style='color:gray;font-size:16px'>Posted @ {docsify-updated}</div>",
     formatUpdated: "{YYYY}-{MM}-{DD} {HH}:{mm}",
   },
 };
