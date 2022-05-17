@@ -4,7 +4,7 @@
 
 Add update time for each of your docsify markdown
 
-## install
+## Install
 
 add js CDN to `index.html`
 
@@ -18,7 +18,7 @@ or
 <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.js"></script>
 ```
 
-## usage
+## Usage
 
 Add javasript to `index.html`, and you can modify the content of the text field arbitrarily
 
@@ -44,7 +44,15 @@ window.$docsify = {
 };
 ```
 
-## time patterns
+## Parameter
+
+|     Field     | Describe                            | Detail                                                       |
+| :-----------: | ----------------------------------- | ------------------------------------------------------------ |
+|     text      | label style to show                 | *text* stores the style and content before the *formatUpdated* |
+| formatUpdated | updated time format and it's suffix | *formatUpdated* stores time formated and it's suffix, eg. {YYYY}/{MM}/{DD} by Author |
+| whereToPlace  | where the label is placed           | "top" or "bottom", default to "bottom"                       |
+
+## Time Patterns
 
 please see [https://github.com/lukeed/tinydate#patterns](https://github.com/lukeed/tinydate#patterns)
 
@@ -57,7 +65,7 @@ please see [https://github.com/lukeed/tinydate#patterns](https://github.com/luke
 - `{ss}`: seconds; eg: **09**
 - `{fff}`: milliseconds; eg: **555**
 
-## nested
+## Nested
 
 modify `timeUpdater.text` to nest HTML
 
@@ -83,9 +91,9 @@ window.$docsify = {
 };
 ```
 
-![demo1](./images/demo2.png)
+![demo2](./images/demo2.png)
 
-## location
+## Location
 
 choose where to place it by `timeUpdater.whereToPlace`
 
@@ -99,9 +107,9 @@ window.$docsify = {
 };
 ```
 
-![demo1](./images/demo3.png)
+![demo3](./images/demo3.png)
 
-## demo
+## Demo
 
 demo: **english**
 
@@ -114,7 +122,7 @@ window.$docsify = {
 };
 ```
 
-![demo1](./images/demo4.png)
+![demo4](./images/demo4.png)
 
 demo: **chinese**
 
@@ -127,7 +135,7 @@ window.$docsify = {
 };
 ```
 
-![demo2](./images/demo5.png)
+![demo5](./images/demo5.png)
 
 demo: **another style**
 
@@ -140,4 +148,18 @@ window.$docsify = {
 };
 ```
 
-![demo3](./images/demo6.png)
+![demo6](./images/demo6.png)
+
+demo: **botton right**
+
+```java
+window.$docsify = {
+  timeUpdater: {
+    text: "<div align='right' width='200px' style='color:gray;font-size:16px'>Posted @ {docsify-updated}</div>",
+    formatUpdated: "{YYYY}-{MM}-{DD} {HH}:{mm}",
+  },
+};
+```
+
+![demo7](./images/demo7.png)
+
