@@ -70,7 +70,7 @@ window.$docsify = {
 };
 ```
 
-![demo1](./images/demo4.png)
+![demo1](./images/demo1.png)
 
 or
 
@@ -83,7 +83,7 @@ window.$docsify = {
 };
 ```
 
-![demo1](./images/demo5.png)
+![demo1](./images/demo2.png)
 
 ## location
 
@@ -92,14 +92,14 @@ choose where to place it by `timeUpdater.whereToPlace`
 ```javascript
 window.$docsify = {
   timeUpdater: {
-    text: ">Last Modify: {docsify-updated}",
+    text: "<div align='center' width='200px' style='color:gray;font-size:10px'>-------------- 最后更新时间:&emsp;{docsify-updated} --------------</div>",
     formatUpdated: "{YYYY}/{MM}/{DD}",
     whereToPlace: "top"  // "top" or "bottom", default to "bottom"
   },
 };
 ```
 
-![demo1](./images/demo6.png)
+![demo1](./images/demo3.png)
 
 ## demo
 
@@ -114,7 +114,7 @@ window.$docsify = {
 };
 ```
 
-![demo1](./images/demo1.png)
+![demo1](./images/demo4.png)
 
 demo: **chinese**
 
@@ -127,7 +127,7 @@ window.$docsify = {
 };
 ```
 
-![demo2](./images/demo2.png)
+![demo2](./images/demo5.png)
 
 demo: **another style**
 
@@ -140,4 +140,4 @@ window.$docsify = {
 };
 ```
 
-![demo3](./images/demo3.png)
+![demo3](./images/demo6.png)
