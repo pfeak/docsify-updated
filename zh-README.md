@@ -2,25 +2,25 @@
 
 ![npm](https://img.shields.io/npm/v/docsify-updated) ![NPM](https://img.shields.io/npm/l/docsify-updated) [![](https://data.jsdelivr.com/v1/package/npm/docsify-updated/badge)](https://www.jsdelivr.com/package/npm/docsify-updated)
 
-Add update time for each of your docsify markdown ([English](./README.md)/[中文](./zh-README.md)).
+为您的每个 docsify markdown 文档增加更新时间 ([English](./README.md)/[中文](./zh-README.md)).
 
-## Install
+## 安装
 
-add js CDN to `index.html`
+添加 js CDN 到 `index.html`
 
 ```javascript
 <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
 ```
 
-or
+或者
 
 ```javascript
 <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.js"></script>
 ```
 
-## Usage
+## 使用
 
-Add javasript to `index.html`, and you can modify the content of the text field arbitrarily
+向 `index.html` 添加 js 脚本，可以根据规则修改参数内容
 
 ```javascript
 window.$docsify = {
@@ -32,7 +32,7 @@ window.$docsify = {
 };
 ```
 
-or
+或者
 
 ```javascript
 window.$docsify = {
@@ -44,30 +44,30 @@ window.$docsify = {
 };
 ```
 
-## Parameter
+## 插件参数
 
-|     Field     | Describe                            | Detail                                                       |
-| :-----------: | ----------------------------------- | ------------------------------------------------------------ |
-|     text      | label style to show                 | *text* stores the style and content before the *formatUpdated* |
-| formatUpdated | updated time format and it's suffix | *formatUpdated* stores time formated and it's suffix, eg. {YYYY}/{MM}/{DD} by Author |
-| whereToPlace  | where the label is placed           | "top" or "bottom", default to "bottom"                       |
+|     参数      | 描述                         | 详情                                                         |
+| :-----------: | ---------------------------- | ------------------------------------------------------------ |
+|     text      | 将要展示标签的样式           | *text* 存放并渲染 *formatUpdated* 之前的内容                 |
+| formatUpdated | 更新时间的格式，与之后的内容 | *formatUpdated* 指定时间格式，与该标签之后的内容，eg. {YYYY}/{MM}/{DD} by 作者名 |
+| whereToPlace  | 插件摆放位置                 | "top" 或 "bottom", 默认 "bottom"                             |
 
-## Time Patterns
+## 时间格式
 
-please see [https://github.com/lukeed/tinydate#patterns](https://github.com/lukeed/tinydate#patterns)
+请查看 [https://github.com/lukeed/tinydate#patterns](https://github.com/lukeed/tinydate#patterns)
 
-- `{YYYY}`: full year; eg: **2017**
-- `{YY}`: short year; eg: **17**
-- `{MM}`: month; eg: **04**
-- `{DD}`: day; eg: **01**
-- `{HH}`: hours; eg: **06** (24h)
-- `{mm}`: minutes; eg: **59**
-- `{ss}`: seconds; eg: **09**
-- `{fff}`: milliseconds; eg: **555**
+- `{YYYY}`: 年; eg: **2017**
+- `{YY}`: （缩略）年; eg: **17**
+- `{MM}`: 月; eg: **04**
+- `{DD}`: 日; eg: **01**
+- `{HH}`: 小时; eg: **06** (24h)
+- `{mm}`: 分; eg: **59**
+- `{ss}`: 秒; eg: **09**
+- `{fff}`: 毫秒; eg: **555**
 
-## Nested
+## 内嵌 HTML
 
-modify `timeUpdater.text` to nest HTML
+修改 `timeUpdater.text` 以内嵌 HTML
 
 ```javascript
 window.$docsify = {
@@ -78,9 +78,9 @@ window.$docsify = {
 };
 ```
 
-![demo1](./images/demo1.png)
+![demo1](assets/zh-README/demo1.png)
 
-or
+或者
 
 ```javascript
 window.$docsify = {
@@ -91,11 +91,11 @@ window.$docsify = {
 };
 ```
 
-![demo2](./images/demo2.png)
+![demo2](assets/zh-README/demo2.png)
 
-## Location
+## 位置
 
-choose where to place it by `timeUpdater.whereToPlace`
+设置 `timeUpdater.whereToPlace` 来决定插件拜访的位置
 
 ```javascript
 window.$docsify = {
@@ -107,11 +107,11 @@ window.$docsify = {
 };
 ```
 
-![demo3](./images/demo3.png)
+![demo3](assets/zh-README/demo3.png)
 
-## Demo
+## 样例
 
-demo: **english**
+demo: **英文**
 
 ```javascript
 window.$docsify = {
@@ -122,9 +122,9 @@ window.$docsify = {
 };
 ```
 
-![demo4](./images/demo4.png)
+![demo4](assets/zh-README/demo4.png)
 
-demo: **chinese**
+demo: **中文**
 
 ```javascript
 window.$docsify = {
@@ -135,9 +135,9 @@ window.$docsify = {
 };
 ```
 
-![demo5](./images/demo5.png)
+![demo5](assets/zh-README/demo5.png)
 
-demo: **another style**
+demo: **其他样式**
 
 ```javascript
 window.$docsify = {
@@ -148,9 +148,9 @@ window.$docsify = {
 };
 ```
 
-![demo6](./images/demo6.png)
+![demo6](assets/zh-README/demo6.png)
 
-demo: **bottom left**
+demo: **左下摆放**
 
 ```java
 window.$docsify = {
@@ -161,5 +161,5 @@ window.$docsify = {
 };
 ```
 
-![demo7](./images/demo7.png)
+![demo7](assets/zh-README/demo7.png)
 
