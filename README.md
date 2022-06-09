@@ -109,7 +109,35 @@ window.$docsify = {
 
 ![demo3](./images/demo3.png)
 
-## Demo
+## Question
+
+### 1. Modify a single document, all document updated time has been modified?
+
+In the process of using any CI/CD method, if you automatically pull the `git` documentation and deploy `docsify`, you may encounter the `.md` file update time is set to the CI/CD time of `git clone your_repo` during this process.
+
+This will cause the plugin to display the wrong time when the file is updated (the plugin's display time is the last update time of each file).
+
+**Repair method**
+
+It is recommended to use `git` to fix file update times during deployment of docsify documentation (automatically or manually).
+
+For example to manually deploy the document:
+
+```shell
+# clone repo
+git clone https://github.com/your_repo.git
+
+# cd dir
+cd your_repo_dir
+
+# repair file update time
+git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
+
+# Start the docsify service
+docsify serve docs/
+```
+
+## Various Styles
 
 demo: **english**
 

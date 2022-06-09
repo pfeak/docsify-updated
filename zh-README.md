@@ -109,7 +109,33 @@ window.$docsify = {
 
 ![demo3](assets/zh-README/demo3.png)
 
-## 样例
+## 问题
+
+### 1. 修改单个文档，所有文档更新时间都被修改？
+
+使用任何一种 CI/CD 方式过程中，如果自动拉取 `git` 文档部署 `docsify`，在这个过程中可能会遇到 `.md` 文件修改时间被设置为 `git clone your_repo` 这个 CI/CD 操作的时间，这将使插件展示文件更新的时间出现错误（插件展示的时间是各个文件最后的修改时间）。
+
+**修复方式**
+
+建议在部署 docsify 文档（自动或手动）期间使用 `git` 修复文件更新时间。
+
+例如手动部署文档：
+
+```shell
+# clone repo
+git clone https://github.com/your_repo.git
+
+# cd dir
+cd your_repo_dir
+
+# repair file update time
+git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
+
+# Start the docsify service
+docsify serve docs/
+```
+
+## 各种样式
 
 demo: **英文**
 
