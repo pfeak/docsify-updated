@@ -1,6 +1,6 @@
 # docsify-updated
 
-![npm](https://img.shields.io/npm/v/docsify-updated) ![NPM](https://img.shields.io/npm/l/docsify-updated) [![](https://data.jsdelivr.com/v1/package/npm/docsify-updated/badge)](https://www.jsdelivr.com/package/npm/docsify-updated)
+![npm](https://img.shields.io/npm/v/docsify-updated) ![NPM](https://img.shields.io/npm/l/docsify-updated) [![](https://data.jsdelivr.com/v1/package/npm/docsify-updated/badge?style=rounded)](https://www.jsdelivr.com/package/npm/docsify-updated)
 
 为您的每个 docsify markdown 文档增加更新时间 ([English](./README.md)/[中文](./zh-README.md)).
 
